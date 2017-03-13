@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Typed JavaScript Using FlowType - Jag Reehal</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+	<link rel="stylesheet" href="css/tachyons.min.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/code.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<div class="flex flex-column justify-around h-100">
+					<h1>Typed JavaScript using <span class="orange">FlowType</span></h1>
+					<h2>Jag Reehal</h2>
+				</div>
+			</section>
+			<section class="cf tl">
+				<h3>About me</h3>
+				<ul class="ma0">
+					<li>started career using Java and C#</li>
+					<li>used JavaScript for some stuff...</li>
+					<li>then three years ago for everything!</li>
+				</ul>
+				<ul class="fragment">
+					<li>I <span class="red">&hearts;</span> Node.js</li>
+					<li>I <span class="red">&hearts;</span> code without ceremony</li>
+					<li class="fragment">but I miss types during development</li>
+				</ul>
+			</section>
+			<section class="cf tl">
+				<h3>Typed languages</h3>
+				<ul class="ma0">
+					<li>help understand how things fit together</li>
+					<li>are like the first unit test</li>
+					<li>allow you to write better code</li>
+					<li>just as important as tooling</li>
+					<li>save you using console.log</li>										
+				</ul>
+			</section>
+			<section class="cf tl">
+				<h3>John working on a JS project</h3>
+				<div class="tc">
+					<img class="plain ma0" src="images/58c463a8e614e320809647.gif">
+				</div>
+			</section>
+			<section>
+				<h3>Go back to where you came from...</h3>
+				<div class="tc fragment">
+					<img class="plain ma0" src="images/58c4653951388057386356.gif">
+				</div>
+			</section>
+			<section>
+				<h3>And people are well...</h3>
+				<div class="tc">
+					<img class="plain ma0" src="images/Screen Shot 2017-03-11 at 21.09.47.png">
+				</div>
+			</section>
+			<section>
+				<h3>FACT</h3>
+				<blockquote class="mt5">JavaScript has types it's just you don't have the ability to reason about them before you run your program</blockquote>
+			</section>
+			<section>
+				<h3>So about <span class="orange">FlowType</span></h3>
+				<ul class="ma0 flex flex-column justify-around f2">
+					<li>released by Facebook in 2014</li>
+					<li class="red">is JUST a type checker</li>
+					<li>written in OCaml</li>
+					<li class="orange">is JUST a type checker</li>
+					<li>cross-platform</li>
+					<li class="yellow">is JUST a type checker</li>
+					<li>IDE support - Atom, VS code, others...</li>
+					<li class="green">is JUST a type checker</li>
+					<li>and...</li>
+				</ul>
+			</section>
+			<section>
+				<h2 class="pt7"><span class="orange">FlowType</span> can be added <span class="fragment orange">gradually</span></h2>
+				<p class="fragment">Demo time!</p>
+			</section>
+			<section>
+				<h3>Getting Started</h3>
+				<video controls src="/videos/flow-getting-started.mp4" />
+			</section>
+			<section>
+				<h3>But in reality have to remove types</h3>
+				<ul class="ma0">					
+					<li>because we have to use annotations</li>
+					<li>use flow-node</li>
+					<li>need plugin to strip types</li>
+				</ul>
+			</section>
+			<section>
+				<h3>With Node</h3>
+				<video controls src="/videos/with-node.mp4" />
+			</section>
+			<section>
+				<h3>but with react...</h3>
+				<video controls src="/videos/does-cra.mp4" />
+			</section>
+			<section>
+				<h3>Exteral modules</h3>
+				<video controls src="/videos/flow-typed.mp4" />
+			</section>
+			<section>
+				<h2 class="pt7"><span class="orange">FlowType</span> basics</h2>
+				<p class="fragment">Demo time!</p>
+			</section>
+			<!--<section>
+				<h3>Real world examples</h3>
+				<ul class="ma0 flex flex-column">
+					<li>increased productivity</li>
+					<li>works when requiring modules</li>
+					<li>makes code reviews easier</li>
+				</ul>
+			</section>-->
+			<section>
+				<h3>Making <span class="gold">Impossible</span> States <span class="gold">Impossible</span></h3>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/IcgmSRJHu_8" frameborder="0" allowfullscreen></iframe>
+				<h4 class="mt3">Using <span class="strike">Elm</span> using <span class="orange">flowtype</span></h4>
+			</section>
+			<section>
+				<h2 class="pt7">Lets make a card game</h2>				
+			</section>
+			<section>
+				<h3><span class="orange">flowtype</span> isn't perfect</h3>
+				<ul class="ma0">
+					<li>cryptic error messages</li>					
+					<li>lots of unresolved issues</li>
+					<li>slow - <span class="orange">SlowType</span> </li>
+					<li>can't extend definitions</li>
+					<li>small support/community</li>
+					<li>not many external definitions</li>
+					<li>+ issues typed languages have</li>					
+				</ul>
+			</section>
+			<section>
+				<h3>Is <span class="blue">Typescript</span> better?</h3>
+				<ul class="ma0">
+					<li>maybe :)</li>
+					<li><span class="orange">FlowType</span> has made it better</li>
+					<li><span class="orange">FlowType</span> is getting better all the time</li>
+					<li>Harder to integrate with existing projects</li>
+					<li>All or nothing</li>
+					<li>No escape hatch</li>
+				</ul>
+			</section>
+			<section>
+				<div class="flex flex-column justify-around h-100">					
+					<h2>Thanks</h2>					
+					<p class="f1">Jag Reehal</p>
+					<p>See examples on <a href="https://github.com/jagreehal">github/jagreehal</a></p>
+					<p><a href="https://twitter.com/jagreehal">@jagreehal</a></p>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			history: true,
+
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function () {
+						hljs.initHighlightingOnLoad();
+					}
+				}
+			]
+		});
+	</script>
+</body>
+
+</html>
